@@ -54,6 +54,8 @@ footer {
 
 header {
     text-align: center;
+    background-image:url(../images/backgroundimg.jpg);
+    background-repeat: repeat-x;
 }
 
 .title1 {
