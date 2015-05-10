@@ -1,0 +1,148 @@
+body {
+	margin:0px;
+	padding:0px;
+	border:0px;
+/*	background-image:url(../images/background.jpg);*/
+/*	background-color:#fff6f0;*/
+    background-color:#ffffff;
+}
+
+footer {
+	text-align:center;
+	padding-top:75px;
+	padding-bottom:75px;
+	color:white;
+	background-color:#252423;
+}
+
+.lbholder ul {
+	list-style-type:none;
+	text-align:center;
+	padding:0;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.lbholder li {
+	display:inline-block;
+}
+
+.lbholder a {
+	text-decoration:none;
+	display:block;
+	width:150px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:rgba(0, 0, 0, 0.04);
+	border-radius:4px;
+	margin-right:10px;
+	margin-bottom:10px;
+	color:black;
+	font-size:150%;
+	font-family: robotothin, helvetica, arial;
+	-o-transition:0.2s;
+    -ms-transition:0.2s;
+    -moz-transition:0.2s;
+    -webkit-transition:0.2s;
+    transition:0.2s;
+}
+
+.lbholder a:hover {
+	background-color:rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+.title1 {
+	display:block;
+}
+
+.title2 {
+	display:none;
+}
+
+#blog {
+    background-color:#ffffff;
+    padding-bottom:6em;
+    max-width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#pinned {
+    width:100%;
+    background-color:#efefef;
+    padding:3em 0 3em 0;
+}
+
+.post {
+    max-width:720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    position:relative;
+    width:100px;
+    height:100px;
+    left:-130px;
+    top:135px;
+    border-radius: 100%;
+}
+
+.text {
+    
+}
+
+@media (min-width:720px) and (max-width:960px) {
+	
+	.title1 {
+		display:none;
+	}
+	
+	.title2 {
+		display:block;
+	}
+}
+
+@media(max-width:720px) {
+	
+	header {
+		margin-top:0px;
+	}
+		
+	.lbholder ul {
+		width:202px;
+	}
+	
+	.lbholder li {
+		display:inline;
+	}
+	
+	.lbholder a {
+		text-decoration:none;
+		display:block;
+		width:300px;
+		padding-top:10px;
+		padding-bottom:10px;
+		border-radius:8px;
+		margin-bottom:10px;
+		color:black;
+		font-size:200%;
+		margin-left:-50px;
+		font-family: robotothin, helvetica, arial;
+	}
+	
+	.title1 {
+		display:none;
+	}
+	
+	.title2 {
+		display:block;
+	}
+
+}
+
