@@ -113,6 +113,14 @@ header {
         text-align: center;
     }
     
+    .posttitle {
+        text-align: left;
+    }
+    
+    .postbrief {
+        text-align: left;
+    }
+    
         
     .icon {
         position:inherit;
@@ -161,6 +169,14 @@ header {
     
     .post {
         text-align: center;
+    }
+    
+    .postbrief {
+        text-align: left;
+    }
+    
+    .posttitle {
+        text-align: left;
     }
     
     .text {
