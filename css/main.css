@@ -7,6 +7,20 @@ body {
     background-color:#ffffff;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #000000; 
+    background: #ff6200;
+}
+
+::selection {
+    color: #000000; 
+    background: #ff6200;
+}
+
+#maincontent a {
+    color:#ba1717;
+}
+
 footer {
 	text-align:center;
 	padding-top:75px;
