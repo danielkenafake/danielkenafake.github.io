@@ -17,7 +17,7 @@ body {
     background: #ff6200;
 }
 
-#maincontent a {
+.postbrief a {
     color:#ba1717;
 }
 
@@ -109,14 +109,30 @@ header {
     border-radius: 100%;
 }
 
-.gbDiv { margin-bottom:20px; text-align: left; }
+.gbDiv { margin-bottom:5em; text-align: left; }
 
 .galleryButton {
     padding: 1em 1em 1em 1em;
-    background-color: #dddddd;
-    text-decoration: none;
+    text-decoration:none;
+	display:block;
+	width:150px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:rgba(0, 0, 0, 0.04);
+	border-radius:4px;
+	margin-right:10px;
+	margin-bottom:10px;
+	color:black;
+	font-size:150%;
+	font-family: robotothin, helvetica, arial;
+	-o-transition:0.2s;
+    -ms-transition:0.2s;
+    -moz-transition:0.2s;
+    -webkit-transition:0.2s;
+    transition:0.2s;
 }
-.galleryButton
+
+.galleryButton:hover {background-color:rgba(0, 0, 0, 0.1);}
 
 
 /*Responsive embed videos*/
