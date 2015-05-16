@@ -132,6 +132,10 @@ header {
     transition:0.2s;
 }
 
+.imgGallery {
+    text-align: center;
+}
+
 .galleryButton:hover {background-color:rgba(0, 0, 0, 0.1);}
 
 
