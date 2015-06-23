@@ -1,15 +1,37 @@
 <html>
     <head>
         <title>Daniel Kenafake - Home</title>
+        <style type="text/css">
+            body{ margin:0; padding:0; border:0; background-color:#ecf3f8; }
+            #maincont { margin-left:auto; margin-right:auto; width:960px; background-color: }
+            header{ margin-left:auto; margin-right:auto; width:960px; background-color: black; }
+            header img { width:960px;}
+            main { margin-left:auto; margin-right:auto; width:960px; }
+            h1 { font-family: sans-serif; }
+            p { font-size: 1.3em; font-family:sans-serif;}
+            #left { width:480px; float: left; text-align: center;}
+            #right { width:480px; float: left; text-align: center;}
+            #left a, #right a { text-decoration: none; color:black; }
+            #left a:hover, #right a:hover { text-decoration: underline; color:black; }
+        </style>
     </head>
-    <body style="max-width:960px; margin-left:auto; margin-right:auto;">
-        <img src="img/segwaysimulator.jpg" style="width:100%;">
-        <br>
-        <table style="border:1px black solid; width:960px;">
-            <tr>
-                <td style="border:1px black solid; width:50%;">Mac <br> <a href="download/Segway%20Simulator%202015%20osx.zip" download>Download</a></td>
-                <td style="border:1px black solid; width:50%;">Windows <br> <a href="download/Segway%20Simulator%202015%20windows.zip" download>Download</a></td>
-            </tr>
-        </table>
+    <body>
+        <div id="maincont">
+            <header>
+                <img src="img/segwaysimulator.jpg">
+            </header>
+            <main>
+                <br>
+                <br>
+                <br>
+                <div id="left">
+                    <a href="download/Segway%20Simulator%202015%20osx.zip" download><img src="img/apple.png" width="100px;"><br>download</a>
+                </div>
+                <div id="right">
+                    <a href="download/Segway%20Simulator%202015%20windows.zip" download><img src="img/windows.png" width="100px;"><br>download</a>
+                </div>
+            </main>
+        </div>
     </body>
+    
 </html>
