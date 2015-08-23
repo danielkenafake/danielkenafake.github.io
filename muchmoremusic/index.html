@@ -28,6 +28,17 @@
 -->
             
             <div id="blog">
+
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Contact</h2>
+                        <a class="close" href="#">×</a>
+                        <div class="content">
+                            <a href="mailto:musicradio@matilda.net.au">musicradio@matilda.net.au</a>
+                        </div>
+                    </div>
+                </div>
+                
                 <h2>Online radio</h2>
                 <p>Stream our radio online:</p>
                 <div class="audioCntr"><audio controls oncontextmenu="return false;">
@@ -36,6 +47,7 @@
                     your browser does not support the audio html element. please use another streaming option.
                 </audio> <p>If the player does not work please try the alternate player <a href="http://cloudrad.io/musicradio24keast/player">here.</a></p></div>
                 
+<!--
                 <hr>
                 <p>Alternatively you can stream our radio to your favourite desktop programs:</p>
                 <div id="programs">
@@ -46,16 +58,17 @@
                     <a href="progfiles/listen.ram" download><img class="program" src="images/icons/realplayer.jpg" alt="Real Player"></a>
                     <a href="progfiles/listen.qtl" download><img class="program" src="images/icons/quicktime.jpg" alt="Quicktime"></a>
                 </div>                
-                <br><hr> 
-                <div style="text-align:center;">Download the mobile app! <br> <a href="#"><img src="images/GoogleBadge.png"></a></div>
+-->
+                <br>
+                <div style="text-align:center;">Download the mobile app! <br> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dk.muchmoremusic"><img src="images/GoogleBadge.png"></a></div>
                 <hr>
                
-                <h2>contact</h2>
-                <p>email: <a href="mailto:musicradio@matilda.net.au">musicradio@matilda.net.au</a></p>
-                <p>phone: <a href="tel:+61410687600">(+61) 0410 687 600</a></p>
-                <p>address: PO Box 277, Ashmore QLD, 4214</p>
-            </div>
 		</section>
-		<footer><p>&copy; Copyright 2015 MuchMoreMusic <a href="pp.html">Privacy Policy.</a></p></footer>
+		<footer>
+            <p>&copy; Copyright 2015 MuchMoreMusic</p>
+            <div class="box">
+                <a class="button" href="#popup1">Contact</a>
+            </div>
+        </footer>
 	</body>
 </html>

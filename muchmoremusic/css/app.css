@@ -32,3 +32,31 @@ a { color:#90bfe8; }
     padding-top:100px;
     text-align: center;
 }
+
+#musicplayer {
+    background-color:#c9c9c9;
+    border:none;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+
+button {
+  outline: none; // this one
+}
+
+#musicplayer:hover{
+    background-color: #363636;
+    color:white;
+    -webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+}
+
+#musicplayer:active{
+    background-color:#982e2e;
+    -webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+}
