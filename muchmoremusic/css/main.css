@@ -40,7 +40,7 @@ footer {
 }
 
 a {
-    color:#90bfe8;
+    color:#429deb;
 }
 
 
@@ -83,13 +83,13 @@ a {
   font-size: 1em;
   padding: 10px;
   color: #000000;
-  border: 2px solid #90bfe8;
+  border: 2px solid #429deb;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
 .button:hover {
-  background: #90bfe8;
+  background: #429deb;
 }
 
 .overlay {
