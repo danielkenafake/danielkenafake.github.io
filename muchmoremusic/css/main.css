@@ -53,6 +53,12 @@ a {
     text-align: center;
 }
 
+.contbox {
+    background-color:#d3d3d3;
+    padding:10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
 #programs{
     text-align: center;
 }
