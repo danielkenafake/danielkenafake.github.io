@@ -134,7 +134,12 @@ header {
 
 .imgGallery {
     text-align: center;
+    max-width:1620px;
+    margin-left:auto;
+    margin-right:auto;
+    
 }
+
 
 .galleryButton:hover {background-color:rgba(0, 0, 0, 0.1);}
 
