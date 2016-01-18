@@ -12,6 +12,13 @@
 
 		<link rel="stylesheet" type="text/css" href="css/font.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+        
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.js">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+        <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+        
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
 
 	</head>
     
@@ -44,33 +51,42 @@
             </div>
             <div id="blog">
                 
-                <div class="post">
-                    <img class="icon" src="images/categories/film.svg" alt="Video icon vimeo section">
-                    <div class="text">
-                        <h2 class="posttitle">Vimeo</h2>
-                        <p class="postbrief">A collection of videos from my <a href="https://vimeo.com/user7736320" target="_blank">Vimeo page</a>.</p>
-                        <div class='embed-container'><iframe src='https://player.vimeo.com/video/130299797' allowFullScreen></iframe></div>
-                        <br>
-                        <div class='embed-container'><iframe src='https://player.vimeo.com/video/104214001' allowFullScreen></iframe></div>
-                        <br>
-                        <div class='embed-container'><iframe src='https://player.vimeo.com/video/91831321' allowFullScreen></iframe></div>
-                    </div>
+                <div class="owl-carousel">
+                    <div class="item-video" data-merge="3"><a class="owl-video" href="http://vimeo.com/23924346"></a></div>
+                    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=JpxsRwnRwCQ"></a></div>
+                    <div class="item-video" data-merge="2"><a class="owl-video" href="http://www.youtube.com/watch?v=FBu_jxT1PkA"></a></div>
+                    <div class="item-video" data-merge="1"><a class="owl-video" href="http://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
+                    <div class="item-video" data-merge="2"><a class="owl-video" href="http://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
+                    <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a></div>
+                    <div class="item-video" data-merge="1"><a class="owl-video" href="http://www.youtube.com/watch?v=0fhoIate4qI"></a></div>
+                    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div>
                 </div>
                 
-                <div class="post">
-                    <img class="icon" src="images/categories/film.svg" alt="Video icon youtube section">
-                    <div class="text">
-                        <h2 class="posttitle">Youtube</h2>
-                        <p class="postbrief">A collection of videos from my <a href="https://www.youtube.com/user/technochook" target="_blank">Youtube Channel</a>.</p>
-                        <div class='embed-container'><iframe src='http://www.youtube.com/embed/HB-lZc4qKyg' allowfullscreen></iframe></div> <br>
-                        <div class='embed-container'><iframe src='http://www.youtube.com/embed/9krAStk0ixc' allowfullscreen></iframe></div> <br>
-                        <div class='embed-container'><iframe src='http://www.youtube.com/embed/log72wy0T2E' allowfullscreen></iframe></div> <br>
-                        <div class='embed-container'><iframe src='http://www.youtube.com/embed/ZH5avQJ0b9k' allowfullscreen></iframe></div>
-                    </div>
-                </div>
+                <script>
+             $('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        responsive:{
+            480:{
+                items:2
+            },
+            600:{
+                items:4
+            }
+        }
+    })
+          </script>
                 
             </div>
 		</section>
-		<footer><p>&copy; Copyright 2015 Daniel Kenafake</p></footer>
+		<footer>
+            <p>&copy; Copyright 2015 Daniel Kenafake</p>
+            
+        </footer>
 	</body>
 </html>
