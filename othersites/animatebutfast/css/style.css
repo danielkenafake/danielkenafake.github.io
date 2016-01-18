@@ -2,8 +2,6 @@ body {
 	margin:0px;
 	padding:0px;
 	border:0px;
-/*	background-image:url(../images/background.jpg);*/
-/*	background-color:#fff6f0;*/
     background-color:#ffffff;
 }
 
@@ -19,9 +17,9 @@ body {
 
 .postbrief a {
     color:#ba1717;
+    
 }
 
-.postbrief {margin-top:-0.5em;}
 
 a img {width:200px; border:1px solid #e8e8e8;}
 
@@ -29,8 +27,8 @@ footer {
 	text-align:center;
 	padding-top:75px;
 	padding-bottom:75px;
-	color:white;
-	background-color:#252423;
+	color:#292a38;
+	background-color: #c2e2f4;
 }
 
 .lbholder ul {
@@ -52,11 +50,10 @@ footer {
 	width:150px;
 	padding-top:5px;
 	padding-bottom:5px;
-	background-color:rgba(0, 0, 0, 0.04);
-	border-radius:4px;
+	background-color:rgb(145, 188, 226);
 	margin-right:10px;
 	margin-bottom:10px;
-	color:black;
+	color:white;
 	font-size:150%;
 	font-family: robotothin, helvetica, arial;
 	-o-transition:0.2s;
@@ -67,21 +64,23 @@ footer {
 }
 
 .lbholder a:hover {
-	background-color:rgba(0, 0, 0, 0.1);
+	background-color:rgb(118, 157, 191);
 }
 
 header {
     text-align: center;
-    background-image:url(../images/backgroundimg.jpg);
-    background-repeat: repeat-x;
+    background-color: #a6d2ed;
+    padding-top:50px;
 }
 
 .title1 {
 	display:block;
+    margin:0px;
 }
 
 .title2 {
 	display:none;
+    margin:0px;
 }
 
 #blog {
@@ -94,7 +93,7 @@ header {
 
 #pinned {
     width:100%;
-    background-color:#efefef;
+    background-color: #c2e2f4;
     padding:3em 0 3em 0;
 }
 
@@ -197,6 +196,7 @@ header {
 	
 	header {
 		margin-top:0px;
+        padding-top:50px;
 	}
 		
 	.lbholder ul {
@@ -213,9 +213,8 @@ header {
 		width:300px;
 		padding-top:10px;
 		padding-bottom:10px;
-		border-radius:8px;
 		margin-bottom:10px;
-		color:black;
+		color:white;
 		font-size:200%;
 		margin-left:-50px;
 		font-family: robotothin, helvetica, arial;
@@ -227,6 +226,7 @@ header {
 	
 	.title2 {
 		display:block;
+        margin:0px;
 	}
     
     .post {
