@@ -157,6 +157,7 @@ header {
 .emailform {
     width:100%;
     height:200px;
+    margin-bottom: 1em;
 }
 
 .emailform input {
@@ -185,6 +186,11 @@ header {
     margin-bottom: 0.5em;
     width:25em;
     height:10em;
+    -o-transition:0.2s;
+    -ms-transition:0.2s;
+    -moz-transition:0.2s;
+    -webkit-transition:0.2s;
+    transition:0.2s;
 }
 
 .emailform textarea:focus {
@@ -305,7 +311,7 @@ header {
     }
     
     .text {
-        padding:0 50px 0 50px;
+        padding:0 20px 0 20px;
     }
     
     .icon {
@@ -322,6 +328,14 @@ header {
         height:300px;
         padding-left:20px;
         padding-right:20px;
+    }
+    
+    .emailform textarea {
+        width:95%;
+    }
+    
+    .emailform input {
+        width:95%;
     }
 
 }
