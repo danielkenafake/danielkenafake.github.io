@@ -8,7 +8,7 @@ category: images
 
 <div class="WideTextBox"><h1>{{ page.title }}</h1></div>
 <div id="MainImg">
-    <img src="{{ site.baseurl }}/postimg/spaceL.jpg">
+    <img src="{{ site.url }}/postimg/spaceL.jpg">
 </div>
 
 <div class="WideTextBox">
