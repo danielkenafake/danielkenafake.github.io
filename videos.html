@@ -2,4 +2,12 @@
 layout: default
 ---
 
-<h1>Videos</h1>
+<div class="WideTextBox">
+    <h1>Videos</h1>
+</div>
+
+<div id="gallery">
+    {% for posts in site.categories.videos %}
+    <a href="{{ posts.url }}"><img src="../img/{{posts.img}}"></a>
+    {% endfor %}
+</div>

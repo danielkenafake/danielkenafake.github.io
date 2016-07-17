@@ -3,5 +3,7 @@ layout: default
 ---
 
 <div id="gallery">
-    <a href="#" alt="image"><img src="http://placehold.it/430x134/ccc"></a>
+    {% for posts in site.posts %}
+    <a href="{{ posts.url }}"><img src="../img/{{posts.img}}"></a>
+    {% endfor %}
 </div>
