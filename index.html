@@ -4,6 +4,6 @@ layout: default
 
 <div id="gallery">
     {% for posts in site.posts %}
-    <a href="{{ posts.url }}"><img src="{{ site.baseurl }}{{ posts.img }}"></a>
+    <a href="{{ posts.url }}"><img src="{{ site.url }}{{ posts.img }}"></a>
     {% endfor %}
 </div>
