@@ -2,8 +2,12 @@
 layout: default
 ---
 
+<div class="WideTextBox">
+    <h1>Images</h1>
+</div>
+
 <div id="gallery">
-    {% for posts in site.posts %}
+    {% for posts in site.categories.images %}
     <a href="{{ posts.url }}"><img src="{{ site.baseurl }}{{ posts.img }}"></a>
     {% endfor %}
 </div>

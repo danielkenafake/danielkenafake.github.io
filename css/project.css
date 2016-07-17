@@ -6,7 +6,12 @@
     max-width:1280px;
     padding-left: 1em;
     padding-right: 1em;
+    line-height: 1.3em;
 }
+
+.WideTextBox h2, .TwoColTextBox h2 {line-height: 1.5em;}
+.WideTextBox a, .TwoColTextBox a {color:#4577d4; text-decoration: none;}
+.WideTextBox a:hover, .TwoColTextBox a:hover {color:#24c4ea;}
 
 .WideTextBox h1 {
     text-align: center;
