@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-		<title>Daniel Kenafake - Home</title>
+		<title>danielkenafake.com - my online portfolio</title>
 		<meta charset="utf-8">
         <meta name="theme-color" content="#262626">
         <meta name="description" content="Daniel Kenafake's Online Portfolio of work.">
@@ -20,19 +20,7 @@
         <header>
             <nav>
                 <div id="navtop">
-                    <ul>
-                        <li><a href="{{ site.url }}/index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn">Projects</a>
-                            <div class="dropdown-content">
-                                <a href="{{ site.url }}/videos.html">Videos</a>
-                                <a href="{{ site.url }}/images.html">Images</a>
-                                <a href="#">Web</a>
-                            </div>
-                        </li>
-                      <li><a href="#about">About</a></li>
-                      <li class="navright"><a href="#contact">Contact</a></li>
-                    </ul>
+                    {% include nav.html %}
                 </div>
             </nav>
             <div id="logo">
