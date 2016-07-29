@@ -46,7 +46,7 @@
             </div>
             
             <div id="MainImg">
-                <img src="/postimg/spaceL.jpg">
+                <img class="imageMain" src="/postimg/spaceL.jpg">
             </div>
             
             <div class="WideTextBox">
@@ -60,6 +60,14 @@
             <p>All work is subject to Copyright &copy; Daniel Kenafake 2016</p>
         </footer>
         
+        <script>
+            var x = document.querySelectorAll(".imageMain");
+            
+            for(var i = 0; i < x.length; i++){
+               var colors = ['#ff4','#f4f','#0ec','#555'];
+               x[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            }
+        </script>
     </body>
     
 </html>
