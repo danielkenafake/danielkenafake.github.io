@@ -56,21 +56,20 @@
     <a href="/videos/2015/07/16/Tom-Tate.html"><img class="loadcolour" src="/postimg/vidpics/tate.jpg"></a>
     
 </div>
-            
+            <script type="text/javascript">
+    var x = document.querySelectorAll(".loadcolour");
+
+    for(var i = 0; i < x.length; i++){
+       var colors = ['#8dc9d1','#8a7fc6','#6082b9','#66a784', '#7796c1', '#77c193', '#337b84', '#7777c1'];
+       x[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    }
+</script>
         </main>
         
         <footer>
             <p>All work is subject to Copyright &copy; Daniel Kenafake 2016</p>
             
         </footer>
-            <script>
-                var x = document.querySelectorAll("loadcolour");
-
-                for(var i = 0; i < x.length; i++){
-                   var colors = ['#8dc9d1','#8a7fc6','#6082b9','#66a784', '#7796c1', '#77c193', '#337b84', '#7777c1'];
-                   x[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                }
-            </script>
     </body>
     
 </html>
