@@ -1,0 +1,6 @@
+var x = document.querySelectorAll(".imageMain");
+
+for(var i = 0; i < x.length; i++){
+   var colors = ['#8dc9d1','#8a7fc6','#6082b9','#66a784', '#7796c1', '#77c193', '#337b84', '#7777c1'];
+   x[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+}
