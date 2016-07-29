@@ -30,7 +30,7 @@
             <a href="#">Web</a>
         </div>
     </li>
-    <li><a href="#about">About</a></li>
+    <li><a href="/about.html">About</a></li>
     <li class="navright"><a href="#contact">Contact</a></li>
 </ul>
                 </div>
@@ -43,25 +43,25 @@
         <main>
             <div id="gallery">
     
-    <a href="/images/2016/07/24/Saturn.html"><img src="/postimg/saturnS.jpg"></a>
+    <a href="/images/2016/07/24/Saturn.html"><img class="loadcolour" src="/postimg/saturnS.jpg"></a>
     
-    <a href="/images/2016/06/01/circles.html"><img src="/postimg/circlesS.jpg"></a>
+    <a href="/images/2016/06/01/circles.html"><img class="loadcolour" src="/postimg/circlesS.jpg"></a>
     
-    <a href="/videos/2015/07/20/Space-Soda.html"><img src="/postimg/vidpics/spacesoda.jpg"></a>
+    <a href="/videos/2015/07/20/Space-Soda.html"><img class="loadcolour" src="/postimg/vidpics/spacesoda.jpg"></a>
     
-    <a href="/images/2015/07/20/sunset.html"><img src="/postimg/sunsetS.jpg"></a>
+    <a href="/images/2015/07/20/sunset.html"><img class="loadcolour" src="/postimg/sunsetS.jpg"></a>
     
-    <a href="/videos/2015/07/19/Dig-Vis.html"><img src="/postimg/vidpics/digvis.jpg"></a>
+    <a href="/videos/2015/07/19/Dig-Vis.html"><img class="loadcolour" src="/postimg/vidpics/digvis.jpg"></a>
     
-    <a href="/images/2015/07/19/Lumberjack.html"><img src="/postimg/lumberS.jpg"></a>
+    <a href="/images/2015/07/19/Lumberjack.html"><img class="loadcolour" src="/postimg/lumberS.jpg"></a>
     
-    <a href="/videos/2015/07/18/Enterprise.html"><img src="/postimg/vidpics/enterprise.jpg"></a>
+    <a href="/videos/2015/07/18/Enterprise.html"><img class="loadcolour" src="/postimg/vidpics/enterprise.jpg"></a>
     
-    <a href="/images/2015/07/18/Flat-Monster.html"><img src="/postimg/flatmonsterS.jpg"></a>
+    <a href="/images/2015/07/18/Flat-Monster.html"><img class="loadcolour" src="/postimg/flatmonsterS.jpg"></a>
     
-    <a href="/images/2015/07/17/Space-Scene.html"><img src="/postimg/spaceS.jpg"></a>
+    <a href="/images/2015/07/17/Space-Scene.html"><img class="loadcolour" src="/postimg/spaceS.jpg"></a>
     
-    <a href="/videos/2015/07/16/Tom-Tate.html"><img src="/postimg/vidpics/tate.jpg"></a>
+    <a href="/videos/2015/07/16/Tom-Tate.html"><img class="loadcolour" src="/postimg/vidpics/tate.jpg"></a>
     
 </div>
             
@@ -71,7 +71,14 @@
             <p>All work is subject to Copyright &copy; Daniel Kenafake 2016</p>
             
         </footer>
-        
+            <script>
+    var x = document.querySelectorAll(".imageMain");
+
+    for(var i = 0; i < x.length; i++){
+       var colors = ['#8dc9d1','#8a7fc6','#6082b9','#66a784', '#7796c1', '#77c193', '#337b84', '#7777c1'];
+       x[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    }
+</script>
     </body>
     
 </html>

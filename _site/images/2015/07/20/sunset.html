@@ -31,7 +31,7 @@
             <a href="#">Web</a>
         </div>
     </li>
-    <li><a href="#about">About</a></li>
+    <li><a href="/about.html">About</a></li>
     <li class="navright"><a href="#contact">Contact</a></li>
 </ul>
                 </div>
@@ -47,7 +47,7 @@
             </div>
             
             <div id="MainImg">
-                <img class="imageMain" src="/postimg/sunsetL.jpg">
+                <img class="loadcolour" src="/postimg/sunsetL.jpg">
             </div>
             
             <div class="WideTextBox">
@@ -60,17 +60,14 @@
         <footer>
             <p>All work is subject to Copyright &copy; Daniel Kenafake 2016</p>
         </footer>
-        <script rel="/js/colours.js" type="text/javascript" ></script>
-<!--
-        <script>
-            var x = document.querySelectorAll(".imageMain");
-            
-            for(var i = 0; i < x.length; i++){
-               var colors = ['#8dc9d1','#8a7fc6','#6082b9','#66a784', '#7796c1', '#77c193', '#337b84', '#7777c1'];
-               x[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-            }
-        </script>
--->
+            <script>
+    var x = document.querySelectorAll(".imageMain");
+
+    for(var i = 0; i < x.length; i++){
+       var colors = ['#8dc9d1','#8a7fc6','#6082b9','#66a784', '#7796c1', '#77c193', '#337b84', '#7777c1'];
+       x[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    }
+</script>
     </body>
     
 </html>
