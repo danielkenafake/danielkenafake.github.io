@@ -160,3 +160,71 @@ footer{
     line-height: 1.3em;
     color:#bababa;
 }
+
+/* email form */
+.emailform {
+    width:100%;
+}
+
+.emailform input {
+    background-color:white;
+    border:1px solid #d8d8d8;
+    padding:0.5em;
+    margin-bottom: 0.5em;
+    width:25em;
+    -o-transition:0.2s;
+    -ms-transition:0.2s;
+    -moz-transition:0.2s;
+    -webkit-transition:0.2s;
+    transition:0.2s;
+}
+
+.emailform input:focus {
+    border:1px solid blue;
+    outline:none;
+}
+
+.emailform textarea {
+    resize: none;
+    background-color:white;
+    border:1px solid #d8d8d8;
+    padding:0.5em;
+    margin-bottom: 0.5em;
+    width:25em;
+    height:10em;
+    -o-transition:0.2s;
+    -ms-transition:0.2s;
+    -moz-transition:0.2s;
+    -webkit-transition:0.2s;
+    transition:0.2s;
+}
+
+.emailform textarea:focus {
+    border:1px solid #2525d9;
+    outline:none;
+}
+
+.emailform button {
+    background-color:#ffffff;
+    border:1px solid #d8d8d8;
+    font-weight: 500;
+    padding:0.5em;
+    margin-bottom: 0.5em;
+    width:10em;
+    -o-transition:0.2s;
+    -ms-transition:0.2s;
+    -moz-transition:0.2s;
+    -webkit-transition:0.2s;
+    transition:0.2s;
+}
+
+.emailform button:hover, .emailform button:focus {
+    background-color:#ffffff;
+    border: 1px solid #2525d9;
+}
+
+#contact {text-align: center;}
+
+@media (max-width: 500px){
+    #contact p {text-align: left;}
+}

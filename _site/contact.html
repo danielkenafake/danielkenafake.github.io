@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-		<title>Sunset - Daniel Kenafake</title>
+		<title>danielkenafake.com - my online portfolio</title>
 		<meta charset="utf-8">
         <meta name="theme-color" content="#262626">
         <meta name="description" content="Daniel Kenafake's Online Portfolio of work.">
@@ -13,8 +13,7 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="/css/font.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<link rel="stylesheet" type="text/css" href="/css/project.css">
-        
+		<link rel="stylesheet" type="text/css" href="/css/project.css">    
     </head>
     
     <body>
@@ -43,23 +42,30 @@
         
         <main>
             <div class="WideTextBox">
-                <h1>Sunset</h1>
-            </div>
-            
-            <div id="MainImg">
-                <img class="loadcolour" src="/postimg/sunsetL.jpg">
-            </div>
-            
-            <div class="WideTextBox">
-    <p>A warm sunset falls over a mountainous landscape.</p><p>Check it out on <a href="https://www.behance.net/gallery/25075351/Warm-Sunset">Behance.</a></p>
+    <h1>Contact</h1>
 </div>
 
-            
-        </main>
-        
-        <footer>
-            <p>Copyright &copy; Daniel Kenafake 2016</p>
-        </footer>
+<div class="TextBox">
+    <div id="contact">
+        <p>Please feel free to contact me or follow me on any social media listed below!</p>
+        <p>
+            <a href="https://www.facebook.com/tacomoose" target="_blank">Facebook</a> &#8226;
+            <a href="https://instagram.com/danielkenafake" target="_blank">Instagram</a> &#8226;
+            <a href="https://youtube.com/user/technochook" target="_blank">Youtube</a> &#8226;
+            <a href="https://vimeo.com/user7736320" target="_blank">Vimeo</a> &#8226;
+            <a href="https://www.behance.net/danielkenafake" target="_blank">Behance</a>
+        </p><br>
+        <form action="//formspree.io/danielkenafake@gmail.com" autocomplete="off" class="emailform" method="POST">
+            <input type="text" placeholder="name" name="name"> <br>
+            <input type="email" placeholder="email" name="_replyto"> <br>
+            <textarea type="text" placeholder="message" name="message"></textarea> <br>
+            <button type="submit" value="Send" class="emailsubmit">submit</button>
+            <input type="hidden" name="_next" value="#thanks" />
+            <input type="text" name="_gotcha" style="display:none" />
+        </form><br>
+    </div>
+</div>
+
             <script type="text/javascript">
     var x = document.querySelectorAll(".loadcolour");
 
@@ -68,6 +74,12 @@
        x[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
     }
 </script>
+        </main>
+        
+        <footer>
+            <p>Copyright &copy; Daniel Kenafake 2016</p>
+            
+        </footer>
     </body>
     
 </html>
