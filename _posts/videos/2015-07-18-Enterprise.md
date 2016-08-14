@@ -8,5 +8,5 @@ category: videos
 ---
 
 <div class="WideTextBox">
-<p>A composite of my Starship Enterprise 3d model within an atmosphere. Spacehip model was created in Cheetah3d, composited in After Effects.</p>
+<p>A composite of my Starship Enterprise 3d model within an atmosphere. Spacehip model was created in Cheetah3d. Composited in After Effects.</p>
 </div>

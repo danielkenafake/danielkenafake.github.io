@@ -8,5 +8,5 @@ category: images
 ---
 
 <div class="WideTextBox">
-    <p>2d artwork of a monster and dismemebered legs. Made in Photoshop.</p>
+    <p>2d artwork of a monster and some dismemebered legs. Made in Photoshop.</p>
 </div>

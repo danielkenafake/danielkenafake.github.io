@@ -8,5 +8,5 @@ category: videos
 ---
 
 <div class="WideTextBox">
-<p>A short animation set in space. This was made as a test animation for using several After Effects scripts.</p>
+<p>A short animation set in space. This animation was made to test several After Effects scripts.</p>
 </div>
