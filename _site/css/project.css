@@ -70,3 +70,5 @@
 }
 
 #MainImg img { max-width: 100%;}
+
+.TwoColTextBox img, .TextBox img, .WideTextBox img { max-width: 100%;}
