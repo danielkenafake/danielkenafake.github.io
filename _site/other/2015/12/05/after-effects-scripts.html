@@ -52,8 +52,61 @@
             </div>
             
             <div class="WideTextBox">
-    <p>Website mockup made for <a href="http://danielkenafake.com" target="_blank">danielkenafake.com</a> I decided to go for a maximum of 3 columns to maximise the size of the images. 4 columns felt too crowded.</p><p>I also decided to change the mobile navigation to better reflect the desktop's horizontal layout. Feel free to view the html/ccs for this project on <a href="https://github.com/danielkenafake/danielkenafake.github.io">github!</a></p>
+    <h2>Inertial Bounce</h2>
+    <p>To change how bouncy the effect is, edit the amp, freq, and decay values.</p>
+    <textarea onclick="this.select();">
+    n = 0;
+    if (numKeys &gt; 0){
+    n = nearestKey(time).index;
+    if (key(n).time &gt; time){
+    n--;
+    }
+    }
+    if (n == 0){
+    t = 0;
+    }else{
+    t = time - key(n).time;
+    }
+
+    if (n &gt; 0 &amp;&amp; t &lt; 1){
+    v = velocityAtTime(key(n).time - thisComp.frameDuration/10);
+    amp = .05;
+    freq = 4.0;
+    decay = 8.0;
+    value + v*amp*Math.sin(freq*t*2*Math.PI)/Math.exp(decay*t);
+    }else{
+    value;
+    }
+    </textarea>
+    
+    <br /><br />
+    
+    <h2>Parent Puppet joints</h2>
+    <p>Place on the puppet joint you want attached to the parent object. The joint should be parented first to a Null# object, which should then be parented to the parent. ie. legwarp point&gt;null1&gt;body</p>
+    <textarea onclick="this.select();">
+    N = thisComp.layer("Null 1");
+    fromWorld(N.toWorld(N.anchorPoint));
+    </textarea>
+    
+    <br /><br />
+    
+    <h2>Wiggle one axis</h2>
+    <p class="largepara">Wiggle the position value on only one axis. this is 2d, if its 3d you will need 4 values.</p>
+    <textarea onclick="this.select();">
+    w = wiggle(2,50);
+    [w[0],value[1]]
+    </textarea> <br /> <p> or for on the vertical axis:</p><textarea onclick="this.select();">
+    w = wiggle(2,50);
+    [value[0],w[1]]
+    </textarea> 
+    
+    <br /><br />
+    
+    
+
+
 </div>
+
 
             
         </main>
