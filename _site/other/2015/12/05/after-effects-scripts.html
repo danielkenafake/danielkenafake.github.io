@@ -57,6 +57,8 @@
             </div>
             
             <div class="WideTextBox">
+    <p><strong>These scripts were not made by me and are just here for reference.<br />Please visit <a href="http://www.motionscript.com/">motionscript.com</a> for more great expressions.</strong></p><br />
+
     <h2>Inertial Bounce</h2>
     <p>To change how bouncy the effect is, edit the amp, freq, and decay values.</p>
     <textarea class="codebox" onclick="this.select();">
@@ -127,6 +129,26 @@
     }else
       value
     </textarea>
+    
+    <br /><br />
+    
+    <h2>Loop Keyframes</h2>
+    <p>Loops the keyframes of a value.</p>
+    <textarea class="codebox" onclick="this.select();">
+    loopOut(type = "cycle", numKeyframes = 0)
+    </textarea>
+    
+    <br /><br />
+    
+    <h2>Wiggle one axis</h2>
+    <p>Wiggle the position value on only one axis. This is 2d, if its 3d you will need 4 values.</p><br /><p>Horizontal axis.</p>
+    <textarea class="codebox" onclick="this.select();">
+    w = wiggle(2,50);
+    [w[0],value[1]]
+    </textarea> <br /><br /> <p>Vertical axis:</p><textarea class="codebox" onclick="this.select();">
+    w = wiggle(2,50);
+    [value[0],w[1]]
+    </textarea> 
     
     <br /><br />
     
