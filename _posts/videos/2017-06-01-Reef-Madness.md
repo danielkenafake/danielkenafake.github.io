@@ -1,5 +1,5 @@
 ---
-layout: imgpost
+layout: vidpost
 title: "Reef Madness"
 img: "/postimg/reefmadness/promoimageS.jpg"
 vidlink: "https://player.vimeo.com/video/236889679"
