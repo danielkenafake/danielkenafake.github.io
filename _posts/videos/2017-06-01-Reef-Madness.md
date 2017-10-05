@@ -2,7 +2,7 @@
 layout: imgpost
 title: "Reef Madness"
 img: "/postimg/reefmadness/promoimageS.jpg"
-vidlink: "https://vimeo.com/236892532"
+vidlink: "https://player.vimeo.com/video/236889679"
 meta: "Reef Madness movie project"
 category: videos
 ---
