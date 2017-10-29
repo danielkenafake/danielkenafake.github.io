@@ -111,12 +111,14 @@ li.dropdown {
     margin-top: 5em;
     max-width:1500px;
     line-height: 3em;
+/*
     -webkit-column-count: 3;
     -webkit-column-gap:   1em;
     -moz-column-count:    3;
     -moz-column-gap:      1em;
     column-count:         3;
     column-gap:           1em;
+*/
 }
 
 #gallery img {
@@ -129,9 +131,11 @@ li.dropdown {
         margin-top: 1em;
         padding-left:1em;
         padding-right:1em;
+/*
         -webkit-column-count: 3;
         -moz-column-count:    3;
         column-count:         3;
+*/
     }
 }
 
@@ -139,9 +143,11 @@ li.dropdown {
     #gallery {
         padding-left:1em;
         padding-right:1em;
+/*
         -webkit-column-count: 2;
         -moz-column-count:    2;
         column-count:         2;
+*/
     }
 }
 
@@ -150,9 +156,11 @@ li.dropdown {
     #gallery {
         padding-left:1em;
         padding-right:1em;
+/*
         -webkit-column-count: 1;
         -moz-column-count:    1;
         column-count:         1;
+*/
     }
 }
 
