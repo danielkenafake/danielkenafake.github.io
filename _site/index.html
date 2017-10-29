@@ -171,7 +171,9 @@
 
             $container.imagesLoaded( function(){
               $container.masonry({
-                itemSelector : '.masonryImage'
+                itemSelector : '.masonryImage',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
               });
             });
 
