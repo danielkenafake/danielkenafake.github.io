@@ -1,7 +1,7 @@
 ---
 layout: imgpost
 title: "Spaceship Interior"
-img: "/postimg/spcShipIntS.jpg"
+img: "/postimg/spcshipIntS.jpg"
 imgL: "/postimg/spcshipIntL.jpg"
 meta: "UI design"
 category: images
