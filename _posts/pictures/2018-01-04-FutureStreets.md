@@ -3,7 +3,7 @@ layout: imgpost
 title: "Futuristic Street"
 img: "/postimg/futuStrtS.jpg"
 imgL: "/postimg/futuStrtL.jpg"
-meta: "UI design"
+meta: "futuristic street"
 category: images
 ---
 
