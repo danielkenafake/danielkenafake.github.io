@@ -1,15 +1,46 @@
----
-layout: default
----
-<div style="max-width:900px; padding:0 1em 0 1em; margin-left:auto; margin-right:auto; margin-top:1em; margin-bottom:6em">
-    
-    <div class='embed-container loadcolour'><iframe src='https://player.vimeo.com/video/257364846' frameborder='0' allowfullscreen></iframe></div>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>daniel kenafake - Animator</title>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#48b0fa">
+    <meta name="description" content="Daniel Kenafake. 2D/3D animation and motion graphics.">
+    <!-- fav/app icons -->
+    <link rel="icon" type="image/png" href="http://danielkenafake.com/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://danielkenafake.com/favicons/favicon-16x16.png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-<div id="gallery">
-<div id="galcentre">
-    {% for posts in site.posts %}
-        <a href="{{ posts.url }}"><img class="loadcolour" src="{{ site.url }}{{ posts.img }}"></a>
-    {% endfor %}
-</div>
-</div>
+  <body>
+    <div class="main">
+      <div class="content">
+        <div class="header">
+          <!-- <img src="DK-Logo-1.svg" alt="" style="width:350px;"> -->
+        </div>
+        <div class="video">
+          <div class='embed-container loadcolour'><iframe src='https://player.vimeo.com/video/257364846' frameborder='0' allowfullscreen></iframe></div>
+        </div>
+        <div class="info">
+          <div class="txtblk">
+            <a href="mailto:danielkenafake@example.com" target="_blank">email</a>
+          </div>
+          <div class="txtblk">
+            <a href="#">insta</a>
+          </div>
+          <div class="txtblk">
+            <a href="#">vimeo</a>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+          <p>&copy; Daniel Kenafake <span>&#x1F44C;</span></p>
+      </footer>
+    </div>
+  </body>
+
+
+
+</html>
