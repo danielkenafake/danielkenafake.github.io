@@ -1,0 +1,48 @@
+body {
+          background-color:#D9D9D9;
+          font-family: monospace;
+  
+}
+
+#mainmenu {
+          background-color:#ACACAC;
+          color:black;
+          padding-top:5px;
+          padding-bottom:5px;
+}
+
+#mainmenu li {
+          list-style: none;
+          margin-top:10px;
+          margin-bottom:10px;
+}
+        
+#mainmenu a {
+  color:black;
+  text-decoration: none;
+  background-color:#E2E2E2;
+  padding:5px 10px 5px 15px;
+  border-radius: 5px;
+}
+
+#content {
+  background-color:#E8E8E8;
+  color:black;
+  padding: 10px;
+  max-width:540px;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#review {
+  font-family: sans-serif;
+}
+
+.revimg {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:400px;
+
+}
