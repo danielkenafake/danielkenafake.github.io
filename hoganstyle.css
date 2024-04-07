@@ -1,20 +1,63 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* override browser default */
+html,
+body {
+  margin: 0;
+  padding: 0;
+	font-family:monospace;
+	font-size:1em;
+	display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+
 body {
           background-color:#D9D9D9;
           font-family: monospace;
+          line-height:1.5em;
+  
+}
+
+h1 { line-height:2em;}
+h2 {line-height:2em;}
+h3 {line-height:1.5em;}
+h4 {line-height:2em;}
+
+header {
+  padding: 0 1em 0 1em;
   
 }
 
 #mainmenu {
           background-color:#ACACAC;
           color:black;
-          padding-top:5px;
-          padding-bottom:5px;
+          padding-top:1em;
+          padding-bottom:1em;
+          padding-left:1em;
+          padding-right:1em;
 }
 
 #mainmenu li {
           list-style: none;
-          margin-top:10px;
-          margin-bottom:10px;
+          margin-top:1em;
+          margin-bottom:1em;
 }
         
 #mainmenu a {
@@ -44,6 +87,8 @@ body {
   margin-left:auto;
   margin-right:auto;
   max-width:400px;
+  margin-top:2em;
+  margin-bottom:2em;
 }
 
 
