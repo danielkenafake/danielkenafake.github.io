@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* override browser default */
+html,
+body {
+  margin: 0;
+  padding: 0;
+	font-family:monospace;
+	font-size:1em;
+	display: grid;
+  grid-template-rows: auto 1fr auto;
+	background-color: white;
+}
+
+.main{
+  width:100%;
+}
+
+#animate{
+  margin: 0 auto;
+  width: 20px;
+  overflow: visible;
+  position: relative;
+}
+
+.content{
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top:70px;
+	padding-bottom:4rem;
+}
+
+.header{
+	margin-top:10em;
+	margin-bottom:10em;
+	text-align:center;
+	background-repeat: no-repeat;
+	background-image: url("img/perishablegoods-logo.svg");
+	background-size: 960px;
+	background-position: center;
+	height: 408px;
+	animation: fadeIn 3s;
+	-webkit-animation: fadeIn 3s;
+	-moz-animation: fadeIn 3s;
+	-o-animation: fadeIn 3s;
+	-ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.info {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	padding:3em 0 3em 0;
+	background-color:black;
+	text-align:center;
+}
+
+.txtblk {
+	display: inline-block;
+	padding: 0 1.5em 0 1.5em;
+}
+
+.txtblk a {
+	color:#fff;
+	font-style: italic;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.txtblk a:hover {
+	color:#bfe0ce;
+	transition: color 0.2s;
+}
+
+.content {
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.product{
+	text-align: left;
+	display:inline-grid;
+	width:400px;
+	height:750px;
+	padding:10px;
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	margin:2em;
+}
+
+.product h2 {
+	line-height: 1.5em;
+}
+
+.copit {
+	background-color:black;
+	padding:0.5em 0.5em 0.9em 0.5em;
+	color:white;
+	text-align: center;
+	font-size: 1.5em;
+	margin-left:auto;
+	height:1em;
+}
+
+.copit:hover {
+	color:black;
+	background-color:green;
+}
+
+#footer{
+	text-align: center;
+  width: 100%;
+  height: 4rem;
+	margin-top:5em;
+}
+
+#footer a{
+	text-decoration: none;
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background-color: black; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+@media only screen and (max-width: 400px) {
+
+	.header{
+		background-size: 250px;
+		margin-bottom: 0px;
+		margin-bottom:5vh;
+	}
+	.video{
+		border-width:10px;
+	}
+}
