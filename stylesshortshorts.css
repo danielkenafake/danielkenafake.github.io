@@ -1,0 +1,410 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* here is the start of actual css */
+
+.header {
+  background-color: #ffd527;
+  padding-top:8em;
+  padding-bottom:8em;
+  text-align: center;
+}
+
+.shortsimg {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:2em;
+  margin-bottom:3em;
+  max-width:500px;
+}
+
+.submit {
+  background-color: black;
+  color: white;
+  border:none;
+  padding:5em 3em 5em 3em;
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  transition: 0.5s;
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75% 93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7% 75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24% 21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
+}
+
+.submit:hover {
+  color:#ffd527;
+  background-color:#d0330d;
+ width: 200px; /* adjust to control the size */
+  aspect-ratio: 1;
+  clip-path: polygon(100% 50%,78.98% 57.76%,93.3% 75%,71.21% 71.21%,75% 93.3%,57.76% 78.98%,50% 100%,42.24% 78.98%,25% 93.3%,28.79% 71.21%,6.7% 75%,21.02% 57.76%,0% 50%,21.02% 42.24%,6.7% 25%,28.79% 28.79%,25% 6.7%,42.24% 21.02%,50% 0%,57.76% 21.02%,75% 6.7%,71.21% 28.79%,93.3% 25%,78.98% 42.24%);
+
+  
+}
+
+.title {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"ELSH" 0;
+  font-size: 9rem;
+  color:#d0330d;
+  line-height: 0.8em;
+}
+
+.byline {
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+
+.moreinfo {
+  text-align: center;
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem;
+  background-color: black;
+  color:white;
+  padding-top:2em;
+  padding-bottom:2em;
+  
+}
+
+.info {
+  margin-left: auto;
+  margin-right:auto;
+  padding-top:2em;
+  padding-bottom:2em;
+  max-width:35em;
+}
+
+.info h2 {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"ELSH" 0;
+  font-size: 6rem;
+  line-height: 0.8em;
+  margin-bottom: 0.2em;
+  margin-top:1em;
+}
+
+.info p, li {
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.3em;
+}
+
+ul {margin-top:1em;}
+li {list-style-type: square;}
+
+.info h3 {
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1em;
+  margin-top:0.5em;
+}
+
+.info a {
+  font-weight: 700;
+  text-decoration: none;
+  color:#e86411;
+}
+
+.info a:hover {
+  color:#e8b711;
+}
+
+.info a:checked {
+  color:#e86411;
+}
+
+.footer {
+  font-family: "Rokkitt", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.3rem;
+  text-align: center;
+  background-color:black;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  color:white;
+  
+}
+
+#mainDiv {
+  background-color: black;
+}
+
+.infoholder{
+  background-color:white;
+  --mask:
+    radial-gradient(1.48em at 50% 2.02em,#000 99%,#0000 101%) calc(50% - 2.6em) 0/5.2em 51% repeat-x,
+    radial-gradient(1.48em at 50% -0.72em,#0000 99%,#000 101%) 50% 1.3em/5.2em calc(51% - 1.3em) repeat-x,
+    radial-gradient(1.48em at 50% calc(100% - 2.02em),#000 99%,#0000 101%) calc(50% - 2.6em) 100%/5.2em 51% repeat-x,
+    radial-gradient(1.48em at 50% calc(100% + 0.72em),#0000 99%,#000 101%) 50% calc(100% - 1.3em)/5.2em calc(51% - 1.3em) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+}
+
+.float1 {
+  position: relative;
+  z-index: -1;
+  height:30em;
+  transform: translateX(430px);
+  bottom:360px;
+  pointer-events: none;
+  margin-bottom:-30em;
+}
+
+.float2 {
+  position: relative;
+  z-index: -1;
+  height:30em;
+  transform: translateX(-400px);
+  bottom:100px;
+  pointer-events: none;
+  margin-bottom:-30em;
+}
+
+.float3 {
+  position: relative;
+  z-index: -1;
+  height:30em;
+  transform: translateX(380px);
+  bottom:190px;
+  pointer-events: none;
+  margin-bottom:-30em;
+}
+
+.float4 {
+  position: relative;
+  z-index: -1;
+  height:30em;
+  transform: translateX(-400px);
+  bottom:100px;
+  pointer-events: none;
+  margin-bottom:-30em;
+}
+
+.footpglogo {
+  display:inline-block;
+  width:8em;
+  vertical-align:middle;
+  padding:0.6em;
+  transition: 0.5s;
+  background-color:white;
+}
+
+.footpglogo:hover {
+  background-color:#d0330d;
+}
+
+/* Phones */
+@media(max-width:700px){
+  
+  .title {
+    font-size: 6rem;
+  }
+  
+  .byline {
+    max-width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 1em;
+  }
+  
+  .shortsimg {
+    width:90%;
+  }
+  
+  .info{
+    max-width:80%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .info h2 {
+    font-size: 4rem;
+  }
+  
+  .info h3 {
+    font-size:1.7rem;
+  }
+  
+  .info p, li {
+    font-size:1.4rem;
+  }
+  
+  .float1 {
+    margin-left:auto;
+    margin-right:auto;
+    position:static;
+    z-index: -1;
+    height:20em;
+    transform: translateX(0px);
+    bottom:1px;
+    pointer-events: none;
+    margin-bottom:0em;
+  }
+  
+  .float2 {
+    margin-left:auto;
+    margin-right:auto;
+    position:static;
+    z-index: -1;
+    height:20em;
+    transform: translateX(0px);
+    bottom:1px;
+    pointer-events: none;
+    margin-bottom:0em;
+  }
+  
+  .float3 {
+    margin-left:auto;
+    margin-right:auto;
+    position:static;
+    z-index: -1;
+    height:20em;
+    transform: translateX(0px);
+    bottom:1px;
+    pointer-events: none;
+    margin-bottom:0em;
+  }
+  
+  .float4 {
+    margin-left:auto;
+    margin-right:auto;
+    position:static;
+    z-index: -1;
+    height:20em;
+    transform: translateX(0px);
+    bottom:1px;
+    pointer-events: none;
+    margin-bottom:0em;
+  }
+  
+  .footpglogo {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:8em;
+    vertical-align:middle;
+    margin-top:1em;
+    padding:0.6em;
+    transition: 0.5s;
+    background-color:white;
+  }
+  
+  .footer {
+    text-align: center;
+    padding-left:2em;
+    padding-right:2em;
+    line-height: 1.2em;
+  }
+}
+
+@media(min-width:700px) and (max-width:1024px){
+  
+  .float1 {
+    position: relative;
+    z-index: -1;
+    height:20em;
+    transform: translateX(140%);
+    bottom:60px;
+    pointer-events: none;
+    margin-bottom:-20em;
+  }
+  
+  .float2 {
+    position: relative;
+    z-index: -1;
+    height:20em;
+    transform: translateX(-80%);
+    bottom:340px;
+    pointer-events: none;
+    margin-bottom:-20em;
+  }
+  
+  .float3 {
+    position: relative;
+    z-index: -1;
+    height:20em;
+    transform: translateX(120%);
+    bottom:60px;
+    pointer-events: none;
+    margin-bottom:-20em;
+  }
+  
+  .float4 {
+    position: relative;
+    z-index: -1;
+    height:20em;
+    transform: translateX(-80%);
+    bottom:-200px;
+    pointer-events: none;
+    margin-bottom:-20em;
+  }
+
+
+}
