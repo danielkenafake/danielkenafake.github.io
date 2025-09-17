@@ -11,7 +11,7 @@
 body {
   /* 4. Add accessible line-height */
   line-height: 1.5;
-  overflow-x: hidden;
+  overflow-x:clip;
 }
 
 /* 6. Improve media defaults */
@@ -262,7 +262,7 @@ li {list-style-type: square;}
 
 /* Phones */
 @media(max-width:700px){
-  
+
   .title {
     font-size: 6rem;
   }
