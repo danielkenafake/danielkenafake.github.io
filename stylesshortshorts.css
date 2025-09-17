@@ -11,7 +11,7 @@
 body {
   /* 4. Add accessible line-height */
   line-height: 1.5;
-  overflow-x:clip;
+  overflow-x:scroll;
 }
 
 /* 6. Improve media defaults */
@@ -261,8 +261,8 @@ li {list-style-type: square;}
 }
 
 /* Phones */
-@media(max-width:700px){
-
+@media(max-width:1024px){
+  
   .title {
     font-size: 6rem;
   }
@@ -363,48 +363,6 @@ li {list-style-type: square;}
     line-height: 1.2em;
   }
 }
-
-@media(min-width:700px) and (max-width:1024px){
-  
-  .float1 {
-    position: relative;
-    z-index: -1;
-    height:20em;
-    transform: translateX(140%);
-    bottom:60px;
-    pointer-events: none;
-    margin-bottom:-20em;
-  }
-  
-  .float2 {
-    position: relative;
-    z-index: -1;
-    height:20em;
-    transform: translateX(-80%);
-    bottom:340px;
-    pointer-events: none;
-    margin-bottom:-20em;
-  }
-  
-  .float3 {
-    position: relative;
-    z-index: -1;
-    height:20em;
-    transform: translateX(120%);
-    bottom:60px;
-    pointer-events: none;
-    margin-bottom:-20em;
-  }
-  
-  .float4 {
-    position: relative;
-    z-index: -1;
-    height:20em;
-    transform: translateX(-80%);
-    bottom:-200px;
-    pointer-events: none;
-    margin-bottom:-20em;
-  }
 
 
 }
