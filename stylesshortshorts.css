@@ -364,7 +364,7 @@ li {list-style-type: square;}
   }
 }
 
-@media(min-width:577px) and (max-width:1024px){
+@media(min-width:577px) and (max-width:1500px){
   
   .title {
     font-size: 8rem;
