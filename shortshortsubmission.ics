@@ -2,17 +2,17 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//DanielKenafake//ShortShorts//EN
 BEGIN:VEVENT
-UID:20251220-danielkenafake@gmail.com
+UID:20260103-danielkenafake@gmail.com
 DTSTAMP:20250925T120000Z
-DTSTART;VALUE=DATE:20251220
-DTEND;VALUE=DATE:20251221
+DTSTART;VALUE=DATE:20260103
+DTEND;VALUE=DATE:20260104
 SUMMARY:Short Shorts Film Submission
 DESCRIPTION:Don’t forget to submit your film via the website!\nhttp://danielkenafake.com/shortshorts.html
 URL:http://danielkenafake.com/shortshorts.html
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
-DESCRIPTION:Submit your film to Short Shorts!
+DESCRIPTION:Reminder: Submit your film to Short Shorts!
 END:VALARM
 END:VEVENT
 END:VCALENDAR
