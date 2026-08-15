@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Photo Grid</title>
+    <link rel="stylesheet" type="text/css" href="photogrid-style.css">
+
+</head>
+
+<body>
+
+    <main class="photo-grid">
+
+        <!-- Example portrait -->
+        <div class="photo">
+            <img
+                src="https://placehold.co/600x900"
+                alt="Example portrait photograph"
+            >
+        </div>
+
+        <!-- Example landscape -->
+        <div class="photo">
+            <img
+                src="https://placehold.co/900x600"
+                alt="Example landscape photograph"
+            >
+        </div>
+
+        <!-- Example square -->
+        <div class="photo">
+            <img
+                src="https://placehold.co/700x700"
+                alt="Example square photograph"
+            >
+        </div>
+
+        <!-- Example tall portrait -->
+        <div class="photo">
+            <img
+                src="https://placehold.co/600x1000"
+                alt="Example tall portrait photograph"
+            >
+        </div>
+
+        <!-- Example wide landscape -->
+        <div class="photo">
+            <img
+                src="https://placehold.co/1000x600"
+                alt="Example wide landscape photograph"
+            >
+        </div>
+
+        <!-- Example portrait -->
+        <div class="photo">
+            <img
+                src="https://placehold.co/600x800"
+                alt="Example portrait photograph"
+            >
+        </div>
+
+        <!-- Example landscape -->
+        <div class="photo">
+            <img
+                src="https://placehold.co/1000x700"
+                alt="Example landscape photograph"
+            >
+        </div>
+
+        <!-- Example portrait -->
+        <div class="photo">
+            <img
+                src="https://placehold.co/600x900"
+                alt="Example portrait photograph"
+            >
+        </div>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <span class="close" id="close">&times;</span>
+
+        <img id="lightbox-image" src="" alt="">
+
+    </div>
+
+
+<script>
+
+    const grid = document.querySelector(".photo-grid");
+
+    /*
+     * ==========================================
+     * MASONRY PHOTO GRID
+     * ==========================================
+     */
+
+    function getColumnCount() {
+
+        if (window.innerWidth <= 450) {
+            return 1;
+        }
+
+        if (window.innerWidth <= 700) {
+            return 2;
+        }
+
+        if (window.innerWidth <= 1100) {
+            return 3;
+        }
+
+        return 4;
+    }
+
+
+    async function buildPhotoGrid() {
+
+        const photos = Array.from(
+            grid.querySelectorAll(".photo")
+        );
+
+        const columnCount = getColumnCount();
+
+        /*
+         * Wait until all images have loaded.
+         * This means we know their actual aspect ratios
+         * before calculating the masonry layout.
+         */
+
+        const images = photos.map(photo =>
+            photo.querySelector("img")
+        );
+
+        await Promise.all(
+            images.map(img => {
+
+                if (img.complete) {
+                    return Promise.resolve();
+                }
+
+                return new Promise(resolve => {
+
+                    img.addEventListener(
+                        "load",
+                        resolve,
+                        { once: true }
+                    );
+
+                    img.addEventListener(
+                        "error",
+                        resolve,
+                        { once: true }
+                    );
+
+                });
+
+            })
+        );
+
+
+        /*
+         * Remove the existing photo elements from the grid.
+         */
+
+        grid.innerHTML = "";
+
+
+        /*
+         * Create the columns.
+         */
+
+        const columns = [];
+
+        for (let i = 0; i < columnCount; i++) {
+
+            const column =
+                document.createElement("div");
+
+            column.className = "photo-column";
+
+            grid.appendChild(column);
+
+            columns.push(column);
+
+        }
+
+
+        /*
+         * Keep track of the approximate height
+         * of each column.
+         */
+
+        const heights =
+            new Array(columnCount).fill(0);
+
+
+        /*
+         * Distribute each photograph into
+         * whichever column is currently shortest.
+         */
+
+        photos.forEach(photo => {
+
+            const shortestColumn =
+                heights.indexOf(
+                    Math.min(...heights)
+                );
+
+
+            columns[shortestColumn]
+                .appendChild(photo);
+
+
+            const image =
+                photo.querySelector("img");
+
+
+            /*
+             * Calculate the displayed image height
+             * based on its aspect ratio.
+             */
+
+            const width =
+                image.naturalWidth;
+
+            const height =
+                image.naturalHeight;
+
+
+            const columnWidth =
+                grid.clientWidth / columnCount;
+
+
+            const displayedHeight =
+                columnWidth *
+                (height / width);
+
+
+            heights[shortestColumn] +=
+                displayedHeight;
+
+
+        });
+
+    }
+
+
+    /*
+     * Build the grid when the page loads.
+     */
+
+    buildPhotoGrid();
+
+
+    /*
+     * Rebuild the grid when the viewport changes.
+     *
+     * The timeout prevents dozens of rebuilds
+     * while the browser is being resized.
+     */
+
+    let resizeTimer;
+
+    window.addEventListener("resize", () => {
+
+        clearTimeout(resizeTimer);
+
+        resizeTimer = setTimeout(() => {
+
+            buildPhotoGrid();
+
+        }, 150);
+
+    });
+
+
+
+    /*
+     * ==========================================
+     * LIGHTBOX
+     * ==========================================
+     */
+
+    const lightbox =
+        document.getElementById("lightbox");
+
+    const lightboxImage =
+        document.getElementById("lightbox-image");
+
+    const close =
+        document.getElementById("close");
+
+
+    /*
+     * Event delegation means this continues
+     * working even after the masonry grid
+     * rearranges the photo elements.
+     */
+
+    grid.addEventListener("click", event => {
+
+        const photo =
+            event.target.closest(".photo");
+
+        if (!photo) {
+            return;
+        }
+
+        const image =
+            photo.querySelector("img");
+
+
+        lightboxImage.src =
+            image.src;
+
+        lightboxImage.alt =
+            image.alt;
+
+
+        lightbox.classList.add("active");
+
+        document.body.style.overflow =
+            "hidden";
+
+    });
+
+
+    /*
+     * Close lightbox
+     */
+
+    function closeLightbox() {
+
+        lightbox.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+
+    close.addEventListener(
+        "click",
+        closeLightbox
+    );
+
+
+    /*
+     * Clicking the dark background closes it.
+     */
+
+    lightbox.addEventListener("click", event => {
+
+        if (event.target === lightbox) {
+
+            closeLightbox();
+
+        }
+
+    });
+
+
+    /*
+     * Escape key closes the lightbox.
+     */
+
+    document.addEventListener("keydown", event => {
+
+        if (event.key === "Escape") {
+
+            closeLightbox();
+
+        }
+
+    });
+
+</script>
+
+
+</body>
+</html>

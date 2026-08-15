@@ -25,7 +25,7 @@ body {
 	font-size:1em;
 	display: grid;
   grid-template-rows: auto 1fr auto;
-	background-color: #94b0a3;
+	background-color: #fff;
 }
 
 .main{
@@ -46,20 +46,69 @@ body {
 	padding-bottom:4rem;
 }
 
-.header{
-	margin-bottom:50px;
-	text-align:center;
-	background-repeat: no-repeat;
-	background-image: url("img/DK-Logo-1.svg");
-	background-size: 350px;
-	background-position: center;
-	height: 120px;
-	animation: fadeIn 3s;
-	-webkit-animation: fadeIn 3s;
-	-moz-animation: fadeIn 3s;
-	-o-animation: fadeIn 3s;
-	-ms-animation: fadeIn 3s;
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1080px;
+    margin: 0 auto 50px;
 }
+
+
+/* Logo */
+
+.header {
+    flex: 0 0 auto;
+
+    width: 220px;
+    height: 75px;
+
+    margin: 0;
+
+    background-repeat: no-repeat;
+    background-image: url("img/DK-Logo-1.svg");
+    background-size: contain;
+    background-position: left center;
+
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+
+
+/* Links */
+
+.info {
+    margin: 0;
+    max-width: none;
+
+    text-align: right;
+}
+
+
+.txtblk {
+    display: inline-block;
+    padding: 0 0 0 2em;
+}
+
+
+.txtblk a {
+    color: #000;
+    font-style: italic;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+
+.txtblk a:hover {
+    color: #878787;
+    transition: color 0.2s;
+}
+
+
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -82,40 +131,10 @@ body {
   100% { opacity: 1; }
 }
 
-
-
 .video{
 	max-width:1080px;
-	border-style: solid;
-	border-width: 15px;
-	border-color: #192b29;
 	margin-left:auto;
 	margin-right:auto;
-}
-
-.info {
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1080px;
-	text-align:center;
-}
-
-.txtblk {
-	display: inline-block;
-	padding: 0 1.5em 0 1.5em;
-}
-
-.txtblk a {
-	color:#ffffff;
-	font-style: italic;
-	text-decoration: none;
-	transition: color 0.2s;
-}
-
-.txtblk a:hover {
-	color:#bfe0ce;
-	transition: color 0.2s;
 }
 
 #footer{
@@ -131,14 +150,32 @@ body {
 
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background-color: black; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
 
-	.header{
-		background-size: 250px;
-		margin-bottom: 0px;
-		margin-bottom:5vh;
-	}
-	.video{
-		border-width:10px;
-	}
+    .top-bar {
+        display: block;
+        margin-bottom: 5vh;
+    }
+
+    .header {
+        width: 250px;
+        height: 85px;
+
+        margin: 0 auto 25px;
+
+        background-size: contain;
+        background-position: center;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .txtblk {
+        padding: 0 0.75em;
+    }
+
+    .video {
+        border-width: 10px;
+    }
 }
